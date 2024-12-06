@@ -1,0 +1,115 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  /* background-color: black; */
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Button styles */
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.add-node-button,
+.edit-node-button,
+.delete-node-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.add-node-button:hover,
+.edit-node-button:hover,
+.delete-node-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-node-button {
+  background-color: #dc3545;
+}
+
+.delete-node-button:hover {
+  background-color: #c82333;
+}
+
+/* Modal styles */
+.custom-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none;
+}
+
+.custom-modal h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-modal input,
+.custom-modal select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.custom-modal button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-modal button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.custom-modal button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.custom-modal .cancel-button,
+.custom-modal .delete-label-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.custom-modal .cancel-button:hover,
+.custom-modal .delete-label-button:hover {
+  background-color: #c82333;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
